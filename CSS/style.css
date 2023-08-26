@@ -1,0 +1,223 @@
+:root{
+    --Primary-Color : #000;
+    --Text-Color : #888;
+    --Text-Hover : #eaeaea ; 
+    --Footer:#111   ;
+    --develop-start-gradient: oklch(65.84% 0.203 242.5318349103755);
+    --bg: #1e2345;
+    --violet: rgb(161, 132, 240);
+    --pink : #d60087;
+    --turquoise: #2fdabd;
+
+    
+}
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+.PARRAFO{
+    font-size: 50px;
+    color: var(--Text-Hover)
+}
+
+ 
+.header{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--Primary-Color);
+    align-items: center;
+    padding: 1em;
+    
+}
+
+
+
+.nav-links{
+    
+    display: flex;
+    list-style: none;
+}
+
+.header .nav-links li{
+
+    color: var(--Text-Color);
+    padding: 1em;
+    display: inline-block;
+
+}
+
+.header .nav-links a{
+    color: var(--Secondary-Color);
+    text-decoration: none;
+
+}
+
+.header .nav-links a:hover{
+    color: var(--Text-Hover);
+}
+
+main.main {
+
+    background-color: var(--Primary-Color);
+
+}
+/*MAIN*/
+
+section.first{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+div.first-content{
+
+    margin-top: 5em;
+    width: 50em;
+    height: 35em;
+
+}
+
+div.first-content p{
+
+    color: var(--Text-Color);
+    font-size: 1.5em;
+    text-align: justify;
+
+}
+
+.logo-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20em;
+    height: 20em;
+    margin-top: 2em;
+    margin-left: 12em;
+}
+
+/* PRODUCTOS */
+
+.tittle-Product{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    margin-right: 2.5em;
+    font-size: 2em;
+    color: var(--develop-start-gradient);
+
+
+}
+.Productos{
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.Cards{
+    overflow: hidden;
+    width: 23em;
+    height: 1em;
+    align-items: center;
+    padding-bottom: 30em;
+}
+
+
+
+.Cards p{
+
+    color: var(--Text-Color);
+    padding: 1em;
+
+}
+.Cards p.precio-producto{
+   
+    color: var(--develop-start-gradient);
+}
+
+.Cards p.nombre-producto{
+    
+   color: var(--Text-Hover);
+}
+.img-producto{
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5em;
+    border-radius: 0.6em;
+    width: 15em;
+    height: 20em;
+}
+
+
+/*
+span.one{
+
+}
+
+span.Two{
+    
+}
+
+span.Three{
+    
+}
+*/
+
+.footer{
+   
+    background-color: var(--Footer);
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-evenly;
+    width: auto;
+    height: 12em;
+    
+}
+
+.footer h1{
+    color: var(--Text-Hover);
+}
+
+.footer p{
+    
+    color: var(--Text-Color);
+    padding-bottom: 0.5em;
+}
+
+/* Animaciones */
+
+h1.tittle{
+
+    font-size: 5em;
+    animation-name: ChangeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes  ChangeColor {
+
+    0%{color: var(--pink);}
+
+    50% {color: var(--violet);}
+
+    100% { color: var(--pink); }
+}
+
+
+
+
+
+
